@@ -1,0 +1,85 @@
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: true}
+package_name: AOIT
+allow_embedding: true
+name: AOIT
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
+metadata: {}
+startup_form: Form1
+native_deps: {head_html: ''}
+db_schema:
+- name: options
+  id: 76952
+  python_name: options
+  columns:
+    ydvVflUl53U=:
+      name: option
+      type: string
+      admin_ui: {order: 0, width: 200}
+  access: {python_name: options, app_id: LJLNQ3ECPOXHGZVP, server: full, client: full,
+    table_id: 76952}
+- name: skutable
+  id: 76734
+  python_name: skutable
+  columns:
+    3ty2JFFupAo=:
+      name: ï»¿(Do Not Modify) Supplier Product
+      type: string
+      admin_ui: {order: 0, width: 200}
+    4gwKfqZ0Lm0=:
+      name: Part Number (Product) (Product)
+      type: string
+      admin_ui: {order: 3, width: 200}
+    ZnNzSNdddo0=:
+      name: (Do Not Modify) Modified On
+      type: string
+      admin_ui: {order: 2, width: 200}
+    kPnq3P0neGQ=:
+      name: (Do Not Modify) Row Checksum
+      type: string
+      admin_ui: {order: 1, width: 200}
+    qAcMHRbb7io=:
+      name: Name
+      type: string
+      admin_ui: {order: 4, width: 200}
+    qe09BcSGc3I=:
+      name: MSRP
+      type: number
+      admin_ui: {order: 5, width: 200}
+  access: {python_name: skutable, app_id: LJLNQ3ECPOXHGZVP, server: full, client: none,
+    table_id: 76734}
+- name: bundletable
+  id: 76733
+  python_name: bundletable
+  columns:
+    Kw8rYQo5y9I=:
+      name: Enterprise Mobility and Security E3
+      type: string
+      admin_ui: {order: 1, width: 200}
+    aY8WTaot1FY=:
+      name: Office 365 E3 Corporate
+      type: string
+      admin_ui: {order: 0, width: 200}
+    o+n7cw_SuXU=:
+      name: Office 365 E5 Corporate
+      type: string
+      admin_ui: {order: 2, width: 200}
+  access: {python_name: bundletable, app_id: LJLNQ3ECPOXHGZVP, server: full, client: none,
+    table_id: 76733}
+- name: csv_table
+  id: 76653
+  python_name: csv_table
+  columns:
+    3QhUnULC8Iw=:
+      name: file
+      type: string
+      admin_ui: {order: -1, width: 200}
+    GmUyIpCugow=:
+      name: CSV
+      type: media
+      admin_ui: {order: 0, width: 200}
+  access: {python_name: csv_table, app_id: LJLNQ3ECPOXHGZVP, server: full, client: none,
+    table_id: 76653}
+renamed: true
